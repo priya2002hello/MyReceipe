@@ -549,3 +549,49 @@ footer
 .page-footer p{
   margin-bottom: 0;
 }
+
+/* 
+==========
+error
+==========
+ */
+.error-page{
+  text-align: center;
+  padding-top: 5rem ;
+}
+
+/* 
+==========
+About
+==========
+ */
+.about-page h2{
+  text-transform: none;
+  font-weight:bold;
+
+}
+.about-page{
+  display: grid;
+ 
+  gap:2rem 4rem;
+  padding-bottom: 3rem;
+
+}
+.about-image{
+  border-radius: var(--borderRadius);
+  height: 200px;
+}
+.featured-title{
+  text-align: center;
+}
+
+@media screen and (min-width:992px) {
+  .about-page{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+    align-items: center;
+  }
+  .about-image{
+    height: 100%;
+  }
+}
