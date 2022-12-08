@@ -19,3 +19,18 @@ navBtnDOM.addEventListener('click',()=>{
 
 const currentYear=new Date().getFullYear();
 date.textContent=currentYear;
+
+const submitBtnDOM=getElement('.btn-contact-submit');
+const emailDOM=getElement('#email');
+const formAlertDOM=getElement('.form-alert')
+
+submitBtnDOM.addEventListener('click',()=>{
+ 
+  if(emailDOM.value=='')
+  {
+    formAlertDOM.classList.add('show-form-alert')
+  }
+  else{
+    formAlertDOM.classList.remove('show-form-alert');
+  }
+})

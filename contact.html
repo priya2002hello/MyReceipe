@@ -45,19 +45,95 @@
   <!-- end of nav -->
   <!-- main -->
   <main class="page">
-    <h1>Contact Page</h1>
+    <section class="contact-page">
+      <article>
+        <h2>Want to get in touch!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident</p>
+      </article>
+
+    
+        <form class="default-form contact-form">
+          <h4>Contact Form</h4>
+          <div class="form-row">
+            <label for="name" class="text-small form-label">name</label>
+            <input type="text" placeholder="Enter your Name here" class="form-input" id="name">
+          </div>
+  
+          <div class="form-row">
+            <label for="email" class="text-small form-label ">
+              email
+            </label>
+            <input type="email" class="form-input" placeholder="enter your email" id="email">
+            <small class="form-alert">Please Provide Email</small>
+          </div>
+      
+          <div class="form-row">
+            <label for="textarea" class="text-small form-label">
+              Message
+            </label>
+            <textarea class="form-text-area" id="textarea"></textarea>
+          </div>
+          <div class="btn-container">
+            <button type="button" class="btn  btn-block btn-contact-submit">
+              Submit
+            </button>
+          </div>
+      
+        </form>
+      
+      
+
+    </section>
+    <section class="featured-recipe">
+      <h5 class="featured-title">Look at these awesome souce!</h5>
+
+      <!-- receipe card starts-->
+      <div class="receipe-list">
+        <!-- single recipe starts-->
+        <a href="./single-recipe.html" class="receipe">
+          <img src="./assets/recipes/recipe-1.jpeg" class="img receipe-image">
+          <h5>carne asada</h5>
+          <p>prep:15min | cook:5min
+          </p>
+        </a>
+        <!-- single receipe ends  -->
+
+        <!-- single recipe starts-->
+        <a href="./single-recipe.html" class="receipe">
+          <img src="./assets/recipes/recipe-2.jpeg" class="img receipe-image">
+          <h5>desi food</h5>
+          <p>prep:15min | cook:5min</p>
+        </a>
+        <!-- single receipe ends  -->
+
+        <!-- single recipe starts-->
+        <a href="./single-recipe.html" class="receipe">
+          <img src="./assets/recipes/recipe-3.jpeg" class="img receipe-image">
+          <h5>chilli potato</h5>
+          <p>prep:15min | cook:5min</p>
+        </a>
+        <!-- single receipe ends  -->
+
+      </div>
+      <!-- receipe card ends-->
+    </section>
   </main>
   <!-- end of main -->
 
   <!-- footer -->
   <footer class="page-footer">
     <p>&copy;
-    <span id="date"></span>
-  <span class="footer-logo">
-   Simply Receipe
-  </span>
-  Built by <a href="#">priyanka nikam</a>
-  </p>
+      <span id="date"></span>
+      <span class="footer-logo">
+        Simply Receipe
+      </span>
+      Built by <a href="#">priyanka nikam</a>
+    </p>
   </footer>
   <script src="./js/app.js"></script>
 </body>
